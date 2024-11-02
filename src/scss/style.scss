@@ -1,0 +1,13 @@
+@import 'variables.scss';
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    
+    .test{
+        width: 100px;
+        height: 100px;
+        background-color: $color-primary;
+    }
+}
