@@ -1,6 +1,15 @@
-body{
+body {
   background-color: $background-color-black-theme;
   font-family: $font-primary;
   font-weight: $font-weight-regular;
   font-size: 20px;
 }
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.page-header__container {}
