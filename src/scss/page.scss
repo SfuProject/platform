@@ -3,6 +3,7 @@ body {
   font-family: $font-primary;
   font-weight: $font-weight-regular;
   font-size: 20px;
+  color: $text-color-white;
 }
 
 .container {
@@ -13,3 +14,5 @@ body {
 }
 
 .page-header__container {}
+
+.institute__container {}
