@@ -1,0 +1,71 @@
+.articles {}
+
+.articles__inner {
+  padding: 0 48px;
+}
+
+.articles__title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: $font-weight-medium;
+  font-size: 48px;
+  line-height: $main-line-height;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.articles__list {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 22px;
+}
+
+@mixin base-article-card($modifier: '') {
+  width: 360px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  &#{&}--cash {
+    background-color: $article-card-background-color-cash;
+  }
+  &#{&}--habitation {
+    background-color: $article-card-background-color-habitation;
+  }
+  &#{&}--documents {
+    background-color: $article-card-background-color-documents;
+  }
+  &#{&}--with-background-image {
+    justify-content: end;
+    gap: 16px;
+  }
+}
+
+.articles-card{
+  @include base-article-card();
+}
+.articles-card--cash{
+  @include base-article-card(cash);
+}
+.articles-card--habitation{
+  @include base-article-card(habitation);
+}
+.articles-card--documents{
+  @include base-article-card(documents);
+}
+.articles-card--with-background-image{
+  @include base-article-card(with-background-image)
+}
+
+.articles-card__title {
+  font-size: 32px;
+  font-weight: $font-weight-bold;
+}
+.articles-card__description{
+  font-weight: $font-weight-medium;
+  font-size: 20px;
+  line-height: $main-line-height;
+  text-decoration: underline 5%;
+  text-underline-offset: 12.5%;
+}

@@ -1,27 +1,29 @@
 <!-- Coding by Dmitry Stupin -->
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>U-INFORMER</title>
-  </head>
-  <body id="body">
-    <header class="header page-header">
-      <div class="container page-header__container">
-        <div class="page-header__inner">
-          <a href="#" class="header__logo logo">
-            U-INFORMER
-          </a>
-          <nav class="header-search search">
-            <input type="search" name="nav-search" id="nav-search" placeholder="Введите название статьи">
-          </nav>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U-INFORMER</title>
+</head>
+
+<body id="body">
+  <header class="header page-header">
+    <div class="container page-header__container">
+      <div class="page-header__inner">
+        <a href="#" class="header__logo logo">
+          U-INFORMER
+        </a>
+        <nav class="header-search search">
+          <input type="search" name="nav-search" id="nav-search" placeholder="Введите название статьи">
+        </nav>
       </div>
-    </header>
-    <main class="main page-main">
-      <section class="institute">
-        <div class="container institute__container">
+    </div>
+  </header>
+  <main class="main page-main">
+    <section class="institute">
+      <div class="container institute__container">
         <div class="institute__inner">
           <h2 class="institute__title">Институты</h2>
           <ul class="institute__list">
@@ -33,9 +35,37 @@
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="container articles__container">
+        <div class="articles__inner">
+          <h2 class="articles__title">Статьи</h2>
+          <ul class="articles__list">
+            <li class="articles__item">
+              <a href="#" class="articles__card articles-card articles-card--cash">
+                <h3 class="articles-card__title">Социальная стипендия</h3>
+                <p class="articles-card__description">Расскажем как и где оформить социальную стипендию</p>
+              </a>
+            </li>
+            <li class="articles__item">
+              <a href="#" class="articles__card articles-card articles-card--habitation articles-card--with-background-image">
+                <h3 class="articles-card__title">Проживание в общежитии</h3>
+                <p class="articles-card__description">Расскажем основные правила и советы проживания</p>
+              </a>
+            </li>
+            <li class="articles__item">
+              <a href="#" class="articles__card articles-card articles-card--documents">
+                <h3 class="articles-card__title">Академический отпуск</h3>
+                <p class="articles-card__description">Как уйти в академ и что для этого нужно</p>
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
-    </main>
-    <script type="module" src="./src/js/main.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
 </html>
