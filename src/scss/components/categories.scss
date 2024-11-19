@@ -1,0 +1,84 @@
+.categories {
+  margin-bottom: 64px;
+}
+
+.categories__inner {
+  padding: 0 48px;
+}
+
+.categories__row {
+  display: grid;
+  grid-template-columns: repeat(4, 245px);
+  gap: 48px;
+}
+
+.categories__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories__list--cash {
+  .categories__title {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 20%;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $underline-color-cash;
+  }
+}
+
+.categories__list--habitation {
+  .categories__title {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 20%;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $underline-color-habitation;
+  }
+}
+
+.categories__list--documents {
+  .categories__title {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 20%;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $underline-color-documents;
+  }
+}
+
+.categories__list--study {
+  .categories__title {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 20%;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $underline-color-study;
+  }
+}
+
+.categories__item {
+
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &:first-child {
+    margin-bottom: 32px;
+  }
+}
+
+.categories__title {
+  font-size: 32px;
+  line-height: $main-line-height;
+  font-weight: $font-weight-medium;
+}
+
+.categories__link {
+  font-weight: $font-weight-regular;
+  font-size: 20px;
+  line-height: $main-line-height;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}

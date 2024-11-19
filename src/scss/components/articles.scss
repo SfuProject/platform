@@ -1,4 +1,6 @@
-.articles {}
+.articles {
+  margin-bottom: 64px;
+}
 
 .articles__inner {
   padding: 0 48px;
@@ -18,6 +20,7 @@
   display: grid;
   grid-template-columns: repeat(3, 360px);
   gap: 22px;
+  margin-bottom: 64px;
 }
 
 @mixin base-article-card($modifier: '') {
@@ -68,4 +71,16 @@
   line-height: $main-line-height;
   text-decoration: underline 5%;
   text-underline-offset: 12.5%;
+}
+
+.button__show-more{
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: $font-weight-regular;
+  padding: 24px 48px;
+  background-color: transparent;
+  border: 2px solid $border-color-white;
+  color: $text-color-white;
+  border-radius: 16px;
 }
