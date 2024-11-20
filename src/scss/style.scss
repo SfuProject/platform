@@ -1,10 +1,10 @@
 @import url('./../scss/reset.scss');
 @import url('./../scss/fonts.scss');
-@import 'variables.scss';
+@import url('./../scss/variables.scss');
 
-@import 'page.scss';
-@import 'components/header.scss';
-@import 'components/institute.scss';
-@import 'components/articles.scss';
-@import 'components/categories.scss';
-@import 'components/footer.scss';
+@import url('./../scss/page.scss');
+@import url('./../scss/components/header.scss');
+@import url('components/institute.scss');
+@import url('./../scss/components/articles.scss');
+@import url('./../scss/components/categories.scss');
+@import url('./../scss/components/footer.scss');
