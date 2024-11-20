@@ -1,9 +1,9 @@
-@import url('./../scss/reset.scss');
-@import url('./../scss/fonts.scss');
-
-@import url('./../scss/page.scss');
-@import url('./../scss/components/header.scss');
-@import url('components/institute.scss');
-@import url('./../scss/components/articles.scss');
-@import url('./../scss/components/categories.scss');
-@import url('./../scss/components/footer.scss');
+@import 'variables.scss';
+@import './reset.scss';
+@import './../scss/fonts.scss';
+@import './page.scss';
+@import './../scss/components/header.scss';
+@import './../scss/components/institute.scss';
+@import './../scss/components/articles.scss';
+@import './../scss/components/categories.scss';
+@import './../scss/components/footer.scss';
