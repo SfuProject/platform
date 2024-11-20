@@ -39,7 +39,7 @@
   &::after {
     content: '';
     position: absolute;
-    background-image: url('./../../../public/images/icons/search-icon.svg');
+    background-image: url('/public/images/icons/search-icon.svg');
     top: 50%;
     left: 24px;
     transform: translateY(-50%);
